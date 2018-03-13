@@ -9,6 +9,8 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 
+import com.uciext.springfw.hw.catalog.model.Catalog;
+
 @XmlRootElement(name = "product")
 @XmlAccessorType(XmlAccessType.FIELD)
 public class Product {
@@ -16,11 +18,17 @@ public class Product {
 	//@Size(min=3, max=15, message="Product name must be between 3 and 15 characters long.") 
 	@XmlElement
 	private int productId;
+	@XmlElement
 	private int sku;
+	@XmlElement
 	private String name;
+	@XmlElement
 	private String unitOfMeasure;
+	@XmlElement
 	private Float price;
+	@XmlElement
 	private Integer availableQuantity;
+	@XmlElement
 	private Catalog catalog;
 
 	public Product() {
